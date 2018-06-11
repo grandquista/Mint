@@ -208,7 +208,7 @@ public class Mint {
             return
         }
 
-        let checkoutPath = Path.temporary + "mint_\(CFAbsoluteTimeGetCurrent())"
+        let checkoutPath = Path.temporary + "mint"
         let packageCheckoutPath = checkoutPath + packagePath.repoPath
 
         try checkoutPath.mkpath()
